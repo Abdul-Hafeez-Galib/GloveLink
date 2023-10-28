@@ -245,7 +245,7 @@ function App() {
   return (
     <div className="App">
       <div className="app-header">
-        <h1 className="heading">SignGlove</h1>
+        <h1 className="heading">GloveLink</h1>
         <h2>DASHBOARD</h2>
       </div>
 
