@@ -213,3 +213,7 @@ body{
 .delete-button-box div:hover{
     scale: 1.1;
 }
+
+input {
+    margin-left: 5px;
+}

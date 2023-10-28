@@ -267,7 +267,7 @@ function App() {
         <div className="wifi_details-box">
         <form className='wifi-labels'>
           <label>Enter WiFi name:
-              <input name='wifi_name' onChange={handlePermForm} />
+              <input  name='wifi_name' onChange={handlePermForm} />
           </label>
           <label>Enter WiFi password:
               <input name='wifi_password' onChange={handlePermForm} />
