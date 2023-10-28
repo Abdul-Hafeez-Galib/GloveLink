@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import './App.css';
+import {Visibility} from '@mui/icons-material';
+import {VisibilityOff} from '@mui/icons-material';
+import TextField from '@mui/material/TextField';
+import InputAdornment from '@mui/material/InputAdornment';
 
 function App() {
   const [inputFields, setInputFields] = useState([]);
@@ -12,6 +16,16 @@ function App() {
     }
   ]);
   const [code, setCode] = useState("");
+  const [type, setType]=useState("password");
+
+  const changeType=()=>{
+    if(type==="password"){
+      setType("text");
+    }
+    else if(type==="text"){
+      setType("password");
+    }
+  }
   
   const handleFormChange = (index, event) => {
     let data = [...inputFields];
@@ -269,8 +283,14 @@ function App() {
             <label>Enter WiFi name:
                 <input  name='wifi_name' onChange={handlePermForm} />
             </label>
-            <label>Enter WiFi password:
-                <input name='wifi_password' onChange={handlePermForm} />
+            <label className='password'>Enter WiFi password:
+              <TextField name='wifi_password' type={type} onChange={handlePermForm}
+              InputProps={{
+                endAdornment: <InputAdornment position="end" onClick={changeType} className='check'>
+                  {type==="text"?<Visibility/> :<VisibilityOff/>}
+                  </InputAdornment>,
+              }}
+              />
             </label>
           </form>
           </div>
