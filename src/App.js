@@ -252,9 +252,10 @@ function App() {
       <div className='Instructions-box'>
         <h2>Instructions for use</h2>
         <ul>
-          <li>Visit <a Clouda href='https://cloud.arduino.cc/home/' target="_blank">Arduino Cloud</a> website. Create an account (or login).</li>
+          <li>Access Arduino IDE through Desktop App or <a Clouda href='https://cloud.arduino.cc/home/' target="_blank">Arduino Cloud</a> website. Create an account (or login).</li>
+          <li>Select board as ESP32-WROOM-DA Module.</li>
           <li>Go to this <a href='https://www.callmebot.com/blog/free-api-whatsapp-messages/' target="_blank">link</a> and follow the given instructions to setup the notification system on your phone</li>
-          <li>On the GloveCode website, enter the wifi and phone number details first then locate and click the "+" button to add a field where you can input the required data.</li>
+          <li>On the GloveLink website, enter the wifi and phone number details first then locate and click the "+" button to add a field where you can input the required data.</li>
           <li>When inputting numerical values, please use the symbols "{">"}", "{"<"}", and "==" to denote "greater than", "less than", and "equal to" the specified field value, respectively.</li>
           <li>Click the "Generate Code" button and then select the "Copy" option.</li>
           <li>Open Arduino Cloud and press Ctrl+V to paste the copied code.</li>
