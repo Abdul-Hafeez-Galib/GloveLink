@@ -252,9 +252,9 @@ function App() {
       <div className='Instructions-box'>
         <h2>Instructions for use</h2>
         <ul>
-          <li>Access Arduino IDE through Desktop App or <a Clouda href='https://cloud.arduino.cc/home/' target="_blank">Arduino Cloud</a> website. Create an account (or login).</li>
+          <li>Access Arduino IDE through Desktop App or <a Clouda href='https://cloud.arduino.cc/home/'>Arduino Cloud</a> website. Create an account (or login).</li>
           <li>Select board as ESP32-WROOM-DA Module.</li>
-          <li>Go to this <a href='https://www.callmebot.com/blog/free-api-whatsapp-messages/' target="_blank">link</a> and follow the given instructions to setup the notification system on your phone</li>
+          <li>Go to this <a href='https://www.callmebot.com/blog/free-api-whatsapp-messages/'>link</a> and follow the given instructions to setup the notification system on your phone</li>
           <li>On the GloveLink website, enter the wifi and phone number details first then locate and click the "+" button to add a field where you can input the required data.</li>
           <li>When inputting numerical values, please use the symbols "{">"}", "{"<"}", and "==" to denote "greater than", "less than", and "equal to" the specified field value, respectively.</li>
           <li>Click the "Generate Code" button and then select the "Copy" option.</li>
@@ -262,27 +262,28 @@ function App() {
           <li>Connect the ESP-32 device, and finally, click on the "Upload" button in Arduino Cloud to initiate the upload process.</li>
         </ul>
       </div>
-
-      <div className="perma_details-box">
-        <div className="wifi_details-box">
-        <form className='wifi-labels'>
-          <label>Enter WiFi name:
-              <input  name='wifi_name' onChange={handlePermForm} />
-          </label>
-          <label>Enter WiFi password:
-              <input name='wifi_password' onChange={handlePermForm} />
-          </label>
-        </form>
-        </div>
-        <div className="phone_details-box">
-          <form className='phone-labels'>
-          <label>Enter WhatsApp number:
-              <input name='wnum' onChange={handlePermForm} />
-          </label>
-          <label>Enter API key:
-              <input name='apik' onChange={handlePermForm} />
-          </label>
+      <div className='all-details-box'>
+        <div className="perma_details-box">
+          <div className="wifi_details-box">
+          <form className='wifi-labels'>
+            <label>Enter WiFi name:
+                <input  name='wifi_name' onChange={handlePermForm} />
+            </label>
+            <label>Enter WiFi password:
+                <input name='wifi_password' onChange={handlePermForm} />
+            </label>
           </form>
+          </div>
+          <div className="phone_details-box">
+            <form className='phone-labels'>
+            <label>Enter WhatsApp number:
+                <input name='wnum' onChange={handlePermForm} />
+            </label>
+            <label>Enter API key:
+                <input name='apik' onChange={handlePermForm} />
+            </label>
+            </form>
+          </div>
         </div>
       </div>
 

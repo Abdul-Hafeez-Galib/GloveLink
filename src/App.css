@@ -217,3 +217,38 @@ body{
 input {
     margin-left: 5px;
 }
+
+@media screen and (max-width: 768px) {
+    .all-details-box{
+        display: flex;
+        justify-content: center;
+    }
+    .wifi-labels{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .wifi-labels label{
+        margin-bottom: 10px;
+    }
+    .wifi-labels input{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .phone-labels{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .phone-labels input{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .phone-labels label{
+        margin-bottom: 10px;
+    }
+}
